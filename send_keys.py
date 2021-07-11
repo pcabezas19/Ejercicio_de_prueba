@@ -18,6 +18,7 @@ class ejercicio_keys(unittest.TestCase):
 		time.sleep(2)
 
 	def tearDown(self):
+		self.driver.close()
 		self.driver.quit()
 
 if __name__ == '__main__':
